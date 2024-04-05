@@ -536,6 +536,10 @@ public class EventHandleStandAbilities {
 
     }
 
+    /*
+    Handle with care! It's very easy to make the player immortal by breaking this method.
+    Times I've made the player immortal by breaking this method: IIII
+    */
     @SubscribeEvent
     public static void cancelDamage(LivingAttackEvent event) {
         LivingEntity entity = event.getEntityLiving();
